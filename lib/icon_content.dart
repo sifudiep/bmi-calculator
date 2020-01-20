@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'constants.dart';
+
 
 class IconContent extends StatelessWidget {
   IconContent({@required this.icon, this.text});
 
   final IconData icon;
   final String text;
-  final Color textColor = Color(0xFF8d8E98);
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +20,7 @@ class IconContent extends StatelessWidget {
         SizedBox(height: 10.0),
         Text(
           text,
-          style: TextStyle(
-            fontSize: 18.0,
-            color: textColor,
-          ),
+          style: kLabelTextStyle
         )
       ],
     );
